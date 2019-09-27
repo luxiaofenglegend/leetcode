@@ -1,5 +1,7 @@
 package linkedList
 
+import "leetcode/dataStructure"
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -27,4 +29,12 @@ func RemoveNthFromEnd(head *ListNode, n int) *ListNode {
 		p.Next = p.Next.Next
 	}
 	return head
+}
+
+func Test19() {
+	l1 := []int{1, 2, 3, 4, 5}
+	list_1 := dataStructure.BuildList(l1)
+	list_1.MyPrint()
+	res := RemoveNthFromEnd(list_1, 1)
+	res.MyPrint()
 }
