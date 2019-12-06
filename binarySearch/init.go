@@ -1,0 +1,5 @@
+package binarySearch
+
+func TestBinarySearchNil() {
+
+}

@@ -1,0 +1,5 @@
+package divideConquer
+
+func TestDivideConquerNil() {
+
+}
